@@ -1,12 +1,10 @@
 #
 # Lab Guide
 
-# Service Portal:
-
-# Building Effective IT Service Portals
+## Service Portal: Building Effective IT Service Portals
 
 #
-### Chris Anello  &amp; Leonardo Ferreira
+## Chris Anello  &amp; Leonardo Ferreira
 
 Default Login / Password:
 
@@ -16,25 +14,7 @@ abel.tuter / knowledge18
 
 aileen.mottern / knowledge18
 
-###
 
-###
-
-###
-
-
-
-
-
-## This
-
-## Page
-
-## Intentionally
-
-## Left
-
-## Blank
 
 ## User Personas
 
@@ -53,7 +33,7 @@ The following files are need to complete this lab; you can download them via the
 |   | logo.png | [https://goo.gl/gKxJcg](https://goo.gl/gKxJcg) |
 |   | background.png | [https://goo.gl/gKxJcg](https://goo.gl/gKxJcg) |
 
-## Lab 1.0 Getting Faimiliar with Servie Portal
+# Lab 1.0 Getting Faimiliar with Servie Portal
 
 ## Lab Goal
 
@@ -61,27 +41,27 @@ Welcome to the Service Portal lab! This lab familiarizes you with the default Se
 
 The Service Portal is a powerful framework used to rapidly build rich web applications using modern web design concepts for the ultimate User Experience. Take a few moments to get familiar with the default portal.
 
-# Browse the Service Portal
+## Browse the Service Portal
 
 1. Browse to your instance and add suffix **/sp**
 Log in as **Abel Tuter** , using the credentials provided on cover.
 https://&lt;your instance&gt;.service-now.com/sp
 2. The default Service Portal should look like the example.
-
+![Relative](image1.png)
 
 3. Take a few minutes to discover the Service Portal. Go over the different items (Knowledge Base, Get Help, Community).
 4. From the homepage; navigate to **Order Something**.
 Select a category of your preference, for example **Hardware**.
 Select the item you want to order.
 When ordering an item; please note the option **Add to Cart**. This gives the user the online web shop experience.
-5. Once you added some items to your cart, click the cart icon  in the menu bar.
+5. Once you added some items to your cart, click the cart icon ![Relative](image2.png) in the menu bar.
 Select **View Cart**.
 6. Here users can still adjust their selection. Click the button **Checkout**.
 7. A new request item (REQxxxxxx) is created. Later in this lab, you use a widget to present the user with a list of his/her requested items.
 8. Lab 2.0
 Create Your Own Portal
 
-## Lab 2.0 Create your Own Portal
+# Lab 2.0 Create your Own Portal
 
 ## Lab Goal
 
@@ -90,7 +70,7 @@ Your company, **Lightspeed Enterprise** , took the strategic initiative to impro
 - Create a new, empty Service Portal from scratch
 - Apply some basic branding to your portal
 
-# Create the Portal
+## Create the Portal
 
 1. Go to your instance (without the **/sp** suffix).
 https://&lt;your instance&gt;.service-now.com/
@@ -123,8 +103,6 @@ In your instance, type **Service Portal** in the Navigation menu. Click **Portal
 
 
 10. Click **New** to create a new portal.
-
-
 
 
 11. Here you can see the main configuration possibilities of the Portal. Next to **Title** and **URL Suffix** you can set the pages of the portal. In this lab, you use the default page and configure it as you want. ill in the form with the following fields to create a new Service Portal:
@@ -168,7 +146,7 @@ In the Application Navigation bar, click **Service Portal Configuration**. This 
 8. There is no need to save your changes as this is done automatically. You can close the browser tab.
 9. Return to the portal (https://&lt;your instance&gt;.service-now.com/itsp) to see the changes.
 
-## Lab 3.0 Design your Pages
+# Lab 3.0 Design your Pages
 
 ## Lab Goal
 
@@ -178,7 +156,7 @@ The Portal is created! This lab explores the user experience, starting with the 
 - Change/Configure the widget properties
 - Publish data from any table within ServiceNow
 
-# Adjust the Homepage
+## Adjust the Homepage
 
 1. Return to the **Service Portal Configuration**.
 
@@ -236,7 +214,7 @@ At the bottom of our page are some out-of-the-box widgets. It would be nice to c
 
 1. Use the **Simple List** widget to publish data from the Request table within ServiceNow. In the **Widgets** tab, search for **simple** ; drag and drop the **Simple List** widget somewhere underneath the row of 4 widgets just changed.
 
-1.
+
 11.Hover over the widget, and click the **Pencil** button to edit it.
 
 
@@ -248,7 +226,7 @@ https://&lt;your instance&gt;.service-now.com/itsp
 
 The result of the widget should look like the example below.
 
-# Filter Data
+## Filter Data
 
 Note that you did not set the **Filter** field in the form as a result **all** open requests are displayed. You want to display only those requests for the specific user logged in.
 
@@ -263,7 +241,7 @@ Click **Update**.
 
 1. You can test the dynamic filter by viewing which **Request Items** are displayed when logging in with a different user (Abel or Aileen).
 
-## Lab 4.0 Configure Widgets
+# Lab 4.0 Configure Widgets
 
 ## Lab Goal
 
@@ -273,7 +251,7 @@ After the homepage is created and the layout defined, you can now experiment wit
 - Control widget visibility by roles
 - Create a widget
 
-# Make a Widget Responsive
+## Make a Widget Responsive
 
 When developing a Service Portal, use the portal on all possible devices. However, on a Desktop you can show much more content on a single page than on a mobile device. The ServiceNow Portal allows you to make your widgets responsive to the environment they run on.
 
@@ -332,9 +310,9 @@ b.        To make the banner disappear when in mobile view, use the predefined
 
 Notice that in **mobile** view, the banner has disappeared and in **desktop** view, the banner nicely **scales** to the entire width of the page.
 
-# Control Widget Visibility by Roles
+## Control Widget Visibility by Roles
 
-# An important aspect in achieving an excellent user experience is personalizing the portal. Instead of creating a different portal for each user, you can control widget visibility by roles or role attributes. In this way, only the relevant widgets appear to the logged-in user. By showing only the relevant widgets to the user, you can create that personalized experience instead of a general experience (static HTML page).
+An important aspect in achieving an excellent user experience is personalizing the portal. Instead of creating a different portal for each user, you can control widget visibility by roles or role attributes. In this way, only the relevant widgets appear to the logged-in user. By showing only the relevant widgets to the user, you can create that personalized experience instead of a general experience (static HTML page).
 
 In this example, you present the approval widget only to the users who have the role Manager because they are the only ones who need to approve the requests made by their team members.
 
@@ -352,7 +330,7 @@ In this example, you present the approval widget only to the users who have the 
 4. Scroll down and click **Save**.
 5. Validate the visibility on the approval widget by logging into the Lightspeed Enterprise Service Portal as **Aileen** (Manager) and as **Abel** (Employee).
 
-# Create a Widget
+## Create a Widget
 
 Now improve the user experience of the **Current Status** widget. The widget shows the availability status of the Business Services, the IT organization offers to Lightspeed Enterprise.
 
